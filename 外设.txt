@@ -1,0 +1,4 @@
+GPIO2  D1	GREENLED  
+GPIO4  D3 	REDLED
+GPIO5  D4 	BUTTON
+按键按下，绿灯亮，开始录音。按键再次按下，绿灯灭，结束录音。

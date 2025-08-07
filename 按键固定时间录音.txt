@@ -1,0 +1,115 @@
+#include "ESP_I2S.h"
+#include "FS.h"
+#include "SD.h"
+
+
+// constants won't change. They're used here to set pin numbers:
+const int buttonPin = 0;  // the number of the pushbutton pin
+const int ledPin = 21;    // the number of the LED pin
+
+// variables will change:
+int buttonState = 0;  // variable for reading the pushbutton status
+int isRecording=0;
+int assfilename=0;
+char *exfilename="recoder";
+
+I2SClass i2s;
+uint8_t *wav_buffer;
+size_t wav_size;
+void record()
+{
+  Serial.println("Recording 20000 s audio data...");
+  delay(1000);
+  // Record 20 seconds of audio data
+  wav_buffer = i2s.recordWAV(20000, &wav_size);
+
+  // 创建动态文件名：exfilename + assfilename + .wav
+  String filename = String(exfilename) + String(assfilename) + ".wav";
+  
+  // Create a file on the SD card with dynamic filename
+  File file = SD.open("/" + filename, FILE_WRITE);
+  if (!file) {
+    Serial.println("Failed to open file for writing!");
+    return;
+  }
+
+  Serial.println("Writing audio data to " + filename + "...");
+
+  // Write the audio data to the file
+  if (file.write(wav_buffer, wav_size) != wav_size) {
+    Serial.println("Failed to write audio data to file!");
+    return;
+  }
+
+  // Close the file
+  file.close();
+
+  Serial.println("Recording saved to " + filename);
+  
+  // 每次录音完成后assfilename+1
+  assfilename++;
+}
+
+
+void setup() {
+
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+
+  // Create an instance of the I2SClass
+
+
+  // Create variables to store the audio data
+
+
+  // Initialize the serial port
+  Serial.begin(115200);
+  while (!Serial) {
+    delay(10);
+  }
+
+  Serial.println("Initializing I2S bus...");
+
+  // Set up the pins used for audio input
+  i2s.setPinsPdmRx(42, 41);
+
+  // start I2S at 16 kHz with 16-bits per sample
+  if (!i2s.begin(I2S_MODE_PDM_RX, 16000, I2S_DATA_BIT_WIDTH_16BIT, I2S_SLOT_MODE_MONO)) {
+    Serial.println("Failed to initialize I2S!");
+    while (1); // do nothing
+  }
+
+  Serial.println("I2S bus initialized.");
+  Serial.println("Initializing SD card...");
+
+  // Set up the pins used for SD card access
+  if(!SD.begin(21)){
+    Serial.println("Failed to mount SD Card!");
+    while (1) ;
+  }
+  Serial.println("SD card initialized.");
+
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == LOW&&isRecording ==0) {
+    // turn LED on:
+    digitalWrite(ledPin, LOW);
+      delay(100);
+      record();
+      isRecording=1;
+  } 
+
+  if (buttonState == HIGH&&isRecording ==1) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+      delay(100);
+      isRecording=0;
+  } 
+  delay(1000);
+  Serial.printf("按钮状态: %d, 录音标志: %d\n", buttonState, isRecording);
+  Serial.printf(".");
+}

@@ -1,0 +1,9 @@
+#line 1 "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\.vscode\\settings.json"
+{
+    "files.associations": {
+        "iterator": "cpp",
+        "initializer_list": "cpp",
+        "xutility": "cpp",
+        "ostream": "cpp"
+    }
+}

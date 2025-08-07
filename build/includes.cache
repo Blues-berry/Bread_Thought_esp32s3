@@ -1,0 +1,162 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\variants\\XIAO_ESP32S3"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "Network.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "HTTPClient.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\HTTPClient\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "NetworkClientSecure.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\NetworkClientSecure\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "ArduinoJson.h",
+    "Includepath": "c:\\Users\\Bluesky\\Documents\\Arduino\\libraries\\ArduinoJson\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "sd_defines.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\SD_MMC\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\Desktop\\MEMORY_BREAD\\esp32s3\\build\\sketch\\esp32s3.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\AP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\STA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\WiFi\\src\\WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src\\NetworkClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src\\NetworkEvents.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src\\NetworkInterface.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src\\NetworkManager.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src\\NetworkServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\Network\\src\\NetworkUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\HTTPClient\\src\\HTTPClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\NetworkClientSecure\\src\\NetworkClientSecure.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\NetworkClientSecure\\src\\ssl_client.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\SD_MMC\\src\\SD_MMC.cpp",
+    "Include": "vfs_api.h",
+    "Includepath": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\FS\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\SD_MMC\\src\\SD_MMC.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\FS\\src\\FS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Bluesky\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.0\\libraries\\FS\\src\\vfs_api.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
